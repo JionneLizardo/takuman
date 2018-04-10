@@ -1,6 +1,6 @@
 <?php
 include('topmenu.php');
-$connect = mysqli_connect("localhost", "root", "gold", "shopping") or die("Please, check your server connection.");
+$connect = mysqli_connect("localhost", "root", "", "shopping") or die("Please, check your server connection.");
 $tosearch=$_POST['tosearch'];
 $query = "select * from products where ";
 $query_fields = Array();
